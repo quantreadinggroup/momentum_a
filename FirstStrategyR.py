@@ -1,3 +1,5 @@
+# code from: http://gbeced.github.io/pyalgotrade/docs/v0.17/html/tutorial.html
+
 from pyalgotrade import strategy
 from pyalgotrade.barfeed import yahoofeed
 
@@ -19,7 +21,5 @@ feed.addBarsFromCSV("orcl", "orcl-2000.csv")
 # Evaluate the strategy with the feed's bars.
 myStrategy = MyStrategy(feed, "orcl")
 myStrategy.run()
-
-
 
 
